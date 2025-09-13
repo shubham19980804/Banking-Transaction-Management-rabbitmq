@@ -1,0 +1,5 @@
+# Created at 2025-09-13T23:02:42.318
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Project\new_workspace\Banking-Transaction-Management-rabbitmq\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

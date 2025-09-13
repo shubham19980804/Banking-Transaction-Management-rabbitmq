@@ -1,0 +1,40 @@
+>>Install mysql and create bank DB
+>> start rabbit mq sevice
+
+Build and run project 
+-------------------------------------------------------------------------------------------------------------------------------------
+Account service
+
+1) >>Use below API for Acoount add  in account table.(use post method and below JSON in postmanou 
+http://localhost:8080/api/accounts/create
+
+{
+    "accountHolder": "Shubham B",
+    "balance": 2000
+}
+--In aobve JSON ou dont need to send ID as it is auto generated in db
+
+2) >>Use Below API to fetch ac detail.
+http://localhost:8080/api/accounts/1
+-- in URL /number put this only  and select get method in postmnan
+
+3) >>Use Below API to delete ac entry from table
+http://localhost:8080/api/accounts/5
+-- in Postman select delete method and give key value as id and 2 or any number 
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Transaction Service
+
+4) >>To transfer ammount use below api and parameter(key and value) and select post method and provide authurization detail as admin and admin from auth tab in postman tool
+http://localhost:8080/api/transactions/transfer
+sourceAccountId  1
+destinationAccountId 2
+amount 500
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+Note:- This is docker based project so you have to installed docker to run this project if not installed keep below prop as false so it can run 
+spring.docker.compose.enabled=false

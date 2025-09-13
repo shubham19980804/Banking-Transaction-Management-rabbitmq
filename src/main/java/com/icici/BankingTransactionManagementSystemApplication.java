@@ -1,0 +1,16 @@
+package com.icici;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@SpringBootApplication
+@EntityScan(basePackages = "com.icici.model")
+public class BankingTransactionManagementSystemApplication {
+
+	public static void main(String[] args) {
+		
+		SpringApplication.run(BankingTransactionManagementSystemApplication.class, args);
+	}
+
+}
